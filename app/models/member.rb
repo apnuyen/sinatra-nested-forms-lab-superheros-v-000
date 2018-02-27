@@ -13,7 +13,7 @@ class Member
     @@members
   end
 
-  def self.clear 
-    @@members.clear 
-  end 
+  def self.clear
+    @@members.clear
+  end
 end
