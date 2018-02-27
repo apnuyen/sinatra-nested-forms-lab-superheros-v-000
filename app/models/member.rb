@@ -14,6 +14,6 @@ class Member
   end
 
   def self.clear
-    @@members.clear
+    @@all.clear
   end
 end
