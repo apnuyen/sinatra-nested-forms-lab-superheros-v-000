@@ -11,13 +11,14 @@ class App < Sinatra::Base
     post '/team' do
       @team = Team.new(params[:team])
 
-      params[:team][:member].each do |details|
+      params[:team][:members].each do |details|
         Member.new(details)
       end
 
       @members = Member.all
 
       erb :team
-    end
+   end
 
+  end
 end
