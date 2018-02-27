@@ -1,16 +1,16 @@
 class Member
   attr_reader :name, :power, :bio
-  @@members = []
+  @@all = []
 
-  def initialize(params)
-    @name = params[:name]
-    @power = params[:power]
-    @bio = params[:bio]
-    @@members << self
+  def initialize(args)
+    @name = args[:name]
+    @power = args[:power]
+    @bio = args[:bio]
+    @@all << self
   end
 
   def self.all
-    @@members
+    @@all
   end
 
   def self.clear
