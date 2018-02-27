@@ -1,4 +1,4 @@
-class Hero
+class Member
   attr_reader :name, :power, :bio
   @@members = []
 
@@ -12,4 +12,8 @@ class Hero
   def self.all
     @@members
   end
+
+  def self.clear 
+    @@members.clear 
+  end 
 end
