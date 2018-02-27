@@ -9,11 +9,11 @@ class Team
     @@teams << self
   end
 
-  def self.all 
-    @@teams 
-  end 
+  def self.all
+    @@teams
+  end
 
-  def self.clear 
-    @@teams.clear 
-  end 
-end 
+  def self.clear
+    @@teams.clear
+  end
+end
